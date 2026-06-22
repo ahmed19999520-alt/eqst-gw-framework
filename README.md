@@ -2,7 +2,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
-[![Documentation](https://img.shields.io/badge/docs-latest-brightgreen.svg)](https://doi.org/10.20944/preprints202602.0758.v2/)
+[![Documentation](https://img.shields.io/badge/docs-latest-brightgreen.svg)](https://doi.org/10.20944/preprints202602.0758.v2)
 [![arXiv](https://img.shields.io/badge/arXiv-2501.00592-b31b1b.svg)](https://arxiv.org/abs/2501.00592)
 
 Python code's that developed for numerical evaluation of integrals for computing gravitational wave spectra, dark matter halo profiles, galaxy rotation curves, galaxy cluster dynamics, and multi-messenger observables from the **Expanded Quantum String Theory with Gluonic Plasma (EQST-GP)** framework.
@@ -172,7 +172,7 @@ If you use this framework in your research, please cite:
 
 ```bibtex
 @article{Ali2025EQSTGP,
-  title=(Swampland Conjectures Compatibility and Technical Refinements in the Expanded Quantum String Theory with Gluonic Plasma (EQST-GP) Model),
+  title=(Swampland Conjectures Compatibility and Technical Refinements  in the Expanded Quantum String Theory with Gluonic Plasma (EQST-GP) Model),
   author={Ali, Ahmed},
   journal={Annals of Mathematics and Physics},
   volume={8},
