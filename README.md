@@ -61,7 +61,7 @@ print(f"LISA SNR: {snr:.2f}")
 
 ## Documentation
 
-Full documentation available at: https://doi.org/10.20944/preprints202601.0003.v1
+Full documentation available at: [https://doi.org/10.20944/preprints202601.0003.v1](https://doi.org/10.20944/preprints202602.0758.v2)
 
 - [Installation Guide](docs/installation.md)
 - [Quick Start Tutorial](docs/quickstart.md)
