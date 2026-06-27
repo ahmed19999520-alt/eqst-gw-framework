@@ -1,0 +1,26 @@
+cosmology:
+  H0_EQST_km_s_Mpc: 0.0006432898060375955
+  Omega_m_BAO_fit: 0.315
+  h_BAO_fit: 0.674
+  tension_EQST_Planck_sigma: 134.79871342038794
+  tension_Planck_SH0ES_sigma: 4.887561225309663
+dark_matter:
+  m_DM_GeV: 1.03e+16
+  sigma_DM_SM_cm2: 1.0e-71
+gravitational_waves:
+  LISA_SNR_4yr: 495.30145505281814
+  Omega_peak_sound_h2: 6.31e-14
+  Omega_peak_turb_h2: 1.2e-14
+  f_peak_sound_Hz: 0.00187
+  f_peak_turb_Hz: 0.0032
+model_comparison:
+  Bayes_factor_EQST_vs_LCDM: .inf
+  interpretation: Decisive
+  log_evidence_EQST: -198.4575826423189
+  log_evidence_LCDM: -15002.813410716748
+phase_transition:
+  T_nucleation_GeV: 9710000000000000.0
+  alpha_PT: 0.42
+  beta_over_H: 94.7
+  g_star: 187.0
+  v_wall: 0.27

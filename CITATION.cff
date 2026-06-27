@@ -1,0 +1,63 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite both the framework paper and the underlying EQST-GP theory paper."
+type: software
+title: "EQST-GP Gravitational Wave Analysis Framework"
+version: 1.0.0
+date-released: 2026-02-10
+version: 2.0.0
+date-released: 2026-05-20
+
+authors:
+  - family-names: "Ali"
+    given-names: "Ahmed"
+    email: "ahmed19999520@gmail.com"
+    affiliation: "Theoretical Physics, Quantum Gravity Research Group , Cologne, Germany"
+    orcid: ""
+url: "https://github.com/ahmed19999520-alt/eqst-gw-framework"
+repository-code: "https://github.com/ahmed19999520-alt/eqst-gw-framework"
+doi: https://doi.org/10.20944/preprints202602.0758.v1
+license: MIT
+keywords:
+  - gravitational waves
+  - quantum gravity
+  - string theory
+  - M-theory
+  - phase transition
+  - LISA
+  - dark matter
+  - cosmology
+  - Calabi-Yau
+  - gluonic plasma
+
+references:
+  - type: article
+    title: "Swampland Conjectures Compatibility and Technical Refinements in the Expanded Quantum String Theory with Gluonic Plasma (EQST-GP) Model"
+    authors:
+      - family-names: "Ali"
+        given-names: "Ahmed"
+    journal: "Annals of Mathematics and Physics"
+    volume: 8
+    issue: 6
+    pages: "273-283"
+    year: 2025
+    doi: "10.17352/amp.000126"
+  - type: article
+    title: "Detecting gravitational waves from cosmological phase transitions with LISA: an update"
+    authors:
+      - family-names: "Caprini"
+        given-names: "C."
+    journal: "JCAP"
+    volume: "03"
+    pages: "024"
+    year: 2020
+    doi: "10.1088/1475-7516/2020/03/024"
+
+  - type: article
+    title={New Prediction for Gravitational Wave Background from Topological Phase Transitions in the Early Universe},
+    author={Ali, Ahmed},
+    journal={Preprints.org, Prepared for submission to JHEP},
+    volume={2},
+    number={758},
+    pages={33},
+    year={2026},
+    doi={10.20944/preprints202602.0758.v2
