@@ -1,0 +1,49 @@
+mission:
+  name: "LISA"
+  agency: "ESA"
+  launch_year: 2034
+  mission_duration_years: 4.0
+  arm_length_m: 2.5e9
+  orbit: "heliocentric trailing Earth"
+
+noise_model:
+  acceleration_noise_m_s2_per_rthz: 3.0e-15
+  optical_metrology_noise_m_per_rthz: 15.0e-12
+  low_frequency_noise_model: "LISA proposal 2017"
+  include_test_mass_charge: true
+  include_laser_frequency_noise: true
+  include_galactic_confusion_noise: true
+
+sensitivity:
+  f_min_Hz: 1.0e-5
+  f_max_Hz: 1.0e-1
+  peak_sensitivity_Hz: 3.0e-3
+  peak_sensitivity_strain: 1.0e-20
+
+science_goals:
+  primary:
+    - "Massive black hole binary mergers"
+    - "Extreme mass ratio inspirals (EMRIs)"
+    - "Stochastic gravitational wave background"
+    - "Verification galactic binaries"
+  secondary:
+    - "Intermediate mass black hole mergers"
+    - "Primordial gravitational waves"
+    - "Dark matter signatures"
+    - "Phase transition gravitational wave background"
+
+eqst_gp_target:
+  f_peak_Hz: 1.87e-3
+  Omega_GW_peak_h2: 6.31e-14
+  expected_SNR: 8.2
+  detection_confidence: "5-sigma"
+  observation_years_needed: 4.0
+  template_bank_required: true
+  multi_channel_analysis: true
+
+data_products:
+  channels: ["A", "E", "T"]
+  sampling_rate_Hz: 0.1
+  time_delay_interferometry: "TDI 1.5"
+  data_format: "HDF5"
+  cadence_s: 10.0

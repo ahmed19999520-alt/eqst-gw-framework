@@ -1,0 +1,52 @@
+simulation:
+  name: "EQST-GP Galaxy Cluster Merger Suite"
+  version: "1.0.0"
+  dm_model: "Majorana Gluon DM (EQST-GP)"
+
+n_body:
+  N_particles_cluster1: 50000
+  N_particles_cluster2: 25000
+  softening_length_kpc: 0.5
+  integrator: "leapfrog"
+  timestep_Myr: 5.0
+  t_max_Gyr: 5.0
+  save_interval_steps: 20
+  gravity_solver: "direct_summation"
+
+halo_model:
+  profile: "NFW"
+  eqst_gp_core_suppression: true
+  core_radius_fraction_rs: 0.05
+  concentration_model: "Bullock2001"
+  concentration_scatter: 0.13
+
+cluster_parameters:
+  M_cluster1_range_solar: [1.0e14, 1.0e15]
+  M_cluster2_range_solar: [5.0e13, 5.0e14]
+  mass_ratio_range: [1.0, 5.0]
+  impact_parameter_range_kpc: [0.0, 1000.0]
+  relative_velocity_range_km_s: [500.0, 4000.0]
+  redshift_range: [0.0, 1.5]
+
+baryons:
+  include_gas: false
+  include_stars: false
+  include_AGN: false
+  note: "DM only for EQST-GP halo structure comparison"
+
+output:
+  save_positions: true
+  save_velocities: true
+  save_density_profiles: true
+  save_rotation_curves: true
+  compute_power_spectrum: false
+  output_format: "HDF5"
+  output_dir: "./outputs/simulation_results/clusters/"
+  compress_snapshots: true
+
+analysis:
+  compute_nfw_fit: true
+  compute_eqst_fit: true
+  compute_concentration: true
+  compute_velocity_dispersion: true
+  compute_substructure: false

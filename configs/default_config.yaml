@@ -1,0 +1,46 @@
+eqst_gp:
+  alpha_PT: 0.42
+  alpha_PT_err: 0.03
+  beta_over_H: 94.7
+  beta_over_H_err: 9.5
+  v_w: 0.27
+  v_w_err: 0.04
+  T_n_GeV: 9.71e15
+  T_n_err_GeV: 0.48e15
+  g_star: 187.0
+
+lisa:
+  mission_duration_years: 4.0
+  arm_length_m: 2.5e9
+  include_galactic_confusion: true
+
+analysis:
+  f_min: 1.0e-5
+  f_max: 1.0e2
+  n_freq_points: 2000
+  mcmc_n_steps: 5000
+  mcmc_n_walkers: 32
+  mcmc_burnin_fraction: 0.2
+
+simulations:
+  n_bubble: 20
+  lattice_size: 64
+  lattice_spacing_m: 5.0e-16
+  cluster_N1: 5000
+  cluster_N2: 2500
+
+data:
+  use_mock: false
+  planck_dir: ./data/observational/planck/
+  desi_dir: ./data/observational/desi/
+  pantheon_dir: ./data/observational/pantheon_plus/
+  jwst_dir: ./data/observational/jwst/
+  ligo_dir: ./data/observational/ligo_gwosc/
+
+output:
+  save_plots: true
+  save_hdf5: true
+  save_json: true
+  output_dir: ./outputs/
+  plot_format: pdf
+  plot_dpi: 300
