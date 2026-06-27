@@ -1,0 +1,200 @@
+eqst-gw-framework/
+│
+├── README.md
+├── LICENSE
+├── setup.py
+├── requirements.txt
+├── environment.yml
+├── .gitignore
+├── CITATION.cff
+├── CONTRIBUTING.md
+├── docs/
+│   ├── index.md
+│   ├── installation.md
+│   ├── quickstart.md
+│   ├── api_reference.md
+│   ├── tutorials/
+│   │   ├── 01_basic_spectrum_calculation.md
+│   │   ├── 02_detector_integration.md
+│   │   ├── 03_observational_data_fitting.md
+│   │   ├── 04_multimessenger_analysis.md
+│   │   └── 05_cluster_simulations.md
+│   └── theory/
+│       ├── eqst_gp_framework.md
+│       ├── phase_transition_dynamics.md
+│       └── gravitational_waves.md
+│
+├── eqst_gw/
+│   ├── __init__.py
+│   ├── version.py
+│   │
+│   ├── core/
+│   │   ├── __init__.py
+│   │   ├── constants.py
+│   │   ├── parameters.py
+│   │   └── cosmology.py
+│   │
+│   ├── physics/
+│   │   ├── __init__.py
+│   │   ├── phase_transition.py
+│   │   ├── bubble_dynamics.py
+│   │   ├── nucleation.py
+│   │   └── effective_potential.py
+│   │
+│   ├── gravitational_waves/
+│   │   ├── __init__.py
+│   │   ├── spectrum.py
+│   │   ├── sources.py
+│   │   ├── sound_waves.py
+│   │   ├── turbulence.py
+│   │   └── bubble_collisions.py
+│   │
+│   ├── detectors/
+│   │   ├── __init__.py
+│   │   ├── base_detector.py
+│   │   ├── lisa.py
+│   │   ├── ligo.py
+│   │   ├── virgo.py
+│   │   ├── kagra.py
+│   │   ├── einstein_telescope.py
+│   │   └── sensitivity_curves.py
+│   │
+│   ├── data/
+│   │   ├── __init__.py
+│   │   ├── loaders.py
+│   │   ├── planck.py
+│   │   ├── desi_bao.py
+│   │   ├── pantheon_sn.py
+│   │   ├── jwst.py
+│   │   └── preprocessors.py
+│   │
+│   ├── analysis/
+│   │   ├── __init__.py
+│   │   ├── parameter_estimation.py
+│   │   ├── mcmc.py
+│   │   ├── fisher_matrix.py
+│   │   ├── model_comparison.py
+│   │   └── systematic_errors.py
+│   │
+│   ├── simulations/
+│   │   ├── __init__.py
+│   │   ├── dark_matter_halos.py
+│   │   ├── galaxy_clusters.py
+│   │   ├── bubble_nucleation_sim.py
+│   │   ├── hydrodynamics.py
+│   │   ├── rotation_curves.py
+│   │   └── structure_formation.py
+│   │
+│   ├── multimessenger/
+│   │   ├── __init__.py
+│   │   ├── correlation.py
+│   │   ├── dark_matter.py
+│   │   ├── hubble_tension.py
+│   │   └── cross_checks.py
+│   │
+│   ├── visualization/
+│   │   ├── __init__.py
+│   │   ├── spectra_plots.py
+│   │   ├── corner_plots.py
+│   │   ├── sky_maps.py
+│   │   └── animation.py
+│   │
+│   ├── io/
+│   │   ├── __init__.py
+│   │   ├── hdf5_handler.py
+│   │   ├── fits_handler.py
+│   │   ├── json_yaml.py
+│   │   └── exporters.py
+│   │
+│   └── utils/
+│       ├── __init__.py
+│       ├── numerical.py
+│       ├── interpolation.py
+│       ├── special_functions.py
+│       └── validators.py
+│
+├── data/
+│   ├── README.md
+│   ├── observational/
+│   │   ├── planck/
+│   │   │   ├── COM_PowerSpect_CMB-TT-full_R3.01.txt
+│   │   │   ├── COM_PowerSpect_CMB-TE-full_R3.01.txt
+│   │   │   └── planck_2018_cosmo_params.json
+│   │   ├── desi/
+│   │   │   ├── DESI_BAO_2024_DR1.csv
+│   │   │   └── covariance_matrix.npy
+│   │   ├── pantheon_plus/
+│   │   │   ├── Pantheon+SH0ES.dat
+│   │   │   └── systematics_covariance.fits
+│   │   ├── jwst/
+│   │   │   ├── high_z_galaxies_catalog.csv
+│   │   │   └── stellar_mass_function.npy
+│   │   └── ligo_gwosc/
+│   │       ├── gwtc3_confident.json
+│   │       └── event_parameters.h5
+│   │
+│   ├── simulations/
+│   │   ├── bubble_nucleation_grid.h5
+│   │   ├── cluster_merger_snapshots/
+│   │   ├── rotation_curves_samples/
+│   │   └── stellar_structure_models/
+│   │
+│   └── templates/
+│       ├── gw_waveforms/
+│       ├── nfw_profiles/
+│       └── phase_transition_templates/
+│
+├── tests/
+│   ├── __init__.py
+│   ├── test_core/
+│   │   ├── test_constants.py
+│   │   ├── test_parameters.py
+│   │   └── test_cosmology.py
+│   ├── test_physics/
+│   │   ├── test_phase_transition.py
+│   │   ├── test_bubble_dynamics.py
+│   │   └── test_nucleation.py
+│   ├── test_gw/
+│   │   ├── test_spectrum.py
+│   │   ├── test_sources.py
+│   │   └── test_detectors.py
+│   ├── test_simulations/
+│   │   ├── test_halos.py
+│   │   ├── test_clusters.py
+│   │   └── test_rotation_curves.py
+│   └── test_integration/
+│       └── test_full_pipeline.py
+│
+├── examples/
+│   ├── 01_compute_gw_spectrum.py
+│   ├── 02_fit_bao_data.py
+│   ├── 03_run_mcmc_analysis.py
+│   ├── 04_simulate_galaxy_cluster.py
+│   ├── 05_rotation_curve_fitting.py
+│   ├── 06_bubble_collision_simulation.py
+│   ├── 07_dark_matter_halo_profile.py
+│   ├── 08_pulsar_timing_residuals.py
+│   └── notebooks/
+│       ├── complete_multimessenger_analysis.ipynb
+│       ├── cluster_merger_visualization.ipynb
+│       └── rotation_curves_eqst_vs_lcdm.ipynb
+│
+├── scripts/
+│   ├── download_observational_data.sh
+│   ├── run_full_pipeline.py
+│   ├── batch_cluster_simulations.py
+│   ├── generate_mock_catalogs.py
+│   └── benchmarking.py
+│
+├── configs/
+│   ├── default_config.yaml
+│   ├── lisa_mission_config.yaml
+│   ├── cluster_simulation_config.yaml
+│   └── mcmc_settings.yaml
+│
+└── outputs/
+    ├── .gitkeep
+    ├── plots/
+    ├── data_products/
+    ├── simulation_results/
+    └── reports/
